@@ -1,0 +1,283 @@
+.gpress_meta label { 
+	display:block; 
+	font-weight:bold; 
+	margin:6px; 
+	margin-bottom:0; 
+	margin-top:12px; 
+}
+ 
+.gpress_meta label span {
+	display:inline; 
+	font-weight:normal; 
+}
+ 
+.gpress_meta span { 
+	color:#999;
+	font-weight:bold;
+}
+ 
+.gpress_meta textarea, 
+.gpress_meta input[type='text'] { 
+	margin-bottom:3px; 
+	width:99%; 
+}
+ 
+.gpress_meta h4 { 
+	color:#999; 
+	font-size:1em; 
+	margin:15px 6px; 
+	text-transform:uppercase; 
+}
+table.gpress_meta_sidebar_table {
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom:10px;
+}
+table.gpress_meta_sidebar_table label {
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px dotted #DDD;
+}
+table.gpress_meta_sidebar_table input[type="radio"] {
+	clear:both;
+	float:left;
+	position:relative;
+	margin:5px;
+}
+table.gpress_meta_sidebar_table span.input_label {
+	float:left;
+	font-size:10px;
+	margin:6px 0;
+	text-transform:uppercase;
+}
+table.gpress_meta_sidebar_table td.divider {
+	border-left:1px dotted #DDD;
+}
+
+/* ADVANCED SIDEBAR SETTINGS */
+#advanced_settings {
+	display:block;
+	width:100%;
+	padding:0 0 15px 0;
+}
+
+#gpress_advanced_hidden {
+	display:block;
+	width:100%;
+	height:auto;
+	padding:5px 0 15px;
+}
+#gpress_advanced_hidden label {
+	padding:0 0 5px 0;
+}
+#gpress_advanced_hidden .advanced_divider {
+	display:block;
+	width:100%;
+	border-top:1px dotted #DDD;
+	margin-top:20px;
+	padding-top:10px;
+}
+#gpress_advanced_hidden .uploadifyQueueItem {
+	width:89%;
+	padding:10 5%;
+}
+
+/* GPRESS OPTIONS PAGE */
+#gpress-options-page #dashboard-widgets-wrap {
+    clear: both;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+#gpress-options-page .postbox,
+#gpress-options-page .postbox-container {
+    float: left;
+    min-width:340px;
+}
+#gpress-options-page .postbox.credits,
+#gpress-options-page .postbox-container.credits {
+    min-width: 180px;
+}
+#gpress-options-page .postbox h3.not-sortable {
+    cursor:auto;
+    color:#464646 !important;
+    padding:7px 2%;
+    width: 96%;
+    float: left;
+}
+
+#gpress-options-page div.inside {
+    margin:10px 2%;
+    width: 96%;
+    float: left;
+}
+
+#gpress-options-page .postbox-container .meta-box-sortables {
+    min-height:20px;
+}
+
+#gpress-options-page .postbox .left-half {
+    float:left;
+    width:52%;
+    padding-right:2%;
+}
+#gpress-options-page .postbox .right-half {
+    float: left;
+    width:42%;
+}
+#gpress-options-page .postbox .gpress-option-list {
+    width: 100%;
+}
+#gpress-options-page .postbox .gpress-option-list, 
+#gpress-options-page .postbox .left-half,
+#gpress-options-page .postbox .right-half {
+    clear: both;
+    float: left;
+}
+#gpress-options-page .postbox .gpress-submit {
+    list-style: none !important;
+}
+#gpress-options-page .postbox .right-half {
+    min-height:30px;
+}
+#gpress-options-page .postbox .right-half,
+#gpress-options-page .postbox .right-half ul li {
+    clear: none;
+}
+#gpress-options-page .postbox .gpress-option-list {
+    padding:18px 0 10px;
+    border-top:1px dotted #CCC;
+}
+#gpress-options-page .postbox .left-half input[type="radio"],
+#gpress-options-page .postbox .right-half input[type="radio"],
+#gpress-options-page .postbox .left-half label.label-radio,
+#gpress-options-page .postbox .right-half label.label-radio {
+    clear:both;
+    float:left;
+    margin:5px 5px 5px 0;
+}
+#gpress-options-page .postbox .left-half label.label-radio,
+#gpress-options-page .postbox .right-half label.label-radio {
+    clear:none;
+    float:left;
+    margin: 3px 0 0 0;
+}
+#gpress-options-page .postbox li.gpress-submit {
+    border-top:none;
+}
+#gpress-options-page .postbox .gpress-option-list:first-child {
+    padding:10px 0;
+    border-top:none;
+}
+#gpress-options-page .postbox .left-half label {
+    float: left;
+    font-weight: bold;
+    padding:5px 0 0 0;
+}
+#gpress-options-page .postbox .right-half .input-wrapper {
+    float:left;
+    width:98%;
+    padding:2px 1%;
+    background: #FCFCFC;
+    border:1px solid #DFDFDF;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+#gpress-options-page .postbox .right-half .input-wrapper input[type="text"] {
+    background:transparent;
+    border:none;
+    width:100%;
+    height:auto;
+}
+#gpress-options-page .postbox .right-half label.label-radio {
+    width: 85%;
+    float: right;
+    text-align: left;
+    font-size: 11px;
+    margin: 3px 0 10px;
+}
+#gpress-options-page span.option-group-intro {
+    clear: both;
+    float: left;
+    position: relative;
+    background: #FFF;
+    padding: 25px 2%;
+    border: 1px solid #CCC;
+    color: #666;
+    margin:10px 5px 15px;
+    font-weight: bold;
+    width: 93%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#gpress-options-page span.option-intro {
+    clear: both;
+    float: left;
+    position: relative;
+    margin-bottom: 5px;
+}
+#gpress-options-page span.option-intro,
+#gpress-options-page span.option-intro p {
+    font-size: 11px;
+    color: #666;
+    line-height: 18px;
+    text-align: justify;
+    width:99%;
+    padding-right:1%;
+}
+#gpress-options-page span.option-intro p:first-child {
+    margin-top:5px;
+}
+#gpress-options-page span.help-text {
+    clear: both;
+    float: right;
+    position: relative;
+    width: 100%;
+    font-size:10px;
+    color: #999;
+    text-align: right;
+}
+#gpress-options-page span.option-intro li {
+    clear: both;
+    float: left;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+    margin: 10px 0;
+    border-top:1px dotted #CCC;
+}
+#gpress-options-page span.option-intro li:first-child {
+    border-top:none;
+    margin: 0;
+}
+
+/* GPRESS NOTIFICATIONS */
+#gpress-options-page #dashboard-widgets-wrap .gpress-options-notification {
+	clear: both;
+	float: left;
+	position:relative;
+	width:94%;
+	padding:15px 3%;
+	margin:10px 0 25px;
+	background-color: #FFFBCC;
+    border: 1px solid #E6DB55;
+    color: #555555;
+	-moz-border-radius:8px;
+    border-radius:8px;
+}
+#gpress-options-page #dashboard-widgets-wrap .gpress-options-notification p span, 
+#gpress-options-page #dashboard-widgets-wrap .gpress-options-notification h3 {
+	clear:both;
+	float:left;
+	position:relative;
+	width:100%;
+	font-size:1.2em;
+	font-weight:bold;
+	padding:15px 0;
+	border-top:1px dotted #BBB;
+	border-bottom:1px dotted #BBB;
+	margin:25px 0 25px;
+	text-align:center;
+}

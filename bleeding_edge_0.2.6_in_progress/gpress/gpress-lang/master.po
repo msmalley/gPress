@@ -1,0 +1,922 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gPress Master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-28 07:51+0800\n"
+"PO-Revision-Date: 2011-02-28 07:54+0800\n"
+"Last-Translator: Mark Smalley <mark@smalley.my>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;__;gpress;_e\n"
+"X-Poedit-Basepath: /xampp/htdocs/personal/gpress/wp-content/plugins/gpress\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gpress.php:58
+msgid "Please note that gPress requires WordPress 3.1 or higher"
+msgstr ""
+
+#: gpress.php:162
+msgid "<h3>IMPORTANT UPGRADE NOTIFICATIONS</h3><p>Please note that gPress has just automatically converted all of your place descriptions into the new custom post type content that will be used from this version forward. Now that we are using proper content and excerpt features, there are no limitations to describing or utilising places.</p><p>Please also take note of these new gPress Option Pages (gPress Options, gPress Components and Advanced Settings). This new format utilises standard WordPress options, which are far less buggy than the previous Options Framework we were using as they do not have any jQuery dependencies and have much less database bloat. Unfortunately, it also means that any options you may have already set-up previous will now need to be re-input here as there have been several critical changes to the core functionality...</p><p>Most importantly, please note that all Foursquare functionality has been removed from core. Specifically becuase of the problems it provided by being included within a core-package and reliant upon a third-party provider... Such functionality is best suited for a seperate gPress add-on / plugin, which will be made much easier to develop further now that gPress features a good solid starting point with its hooks and filters, allowing developers to do some pretty radical things.</p><p>We have also removed all the file upload options, and MS (multi-site) options, but will be adding those in again in the next version. Markers can still however be customised globally by adding absolute URLs, as seen below.<p><span>PLEASE NOTE THAT THIS MESSAGE WILL ONLY BE AVAILABLE ONCE - SO PLEASE PAY SPECIAL ATTENTION TO IT NOW</span></p>"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:98
+msgid "Present Location:"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:204
+msgid "Sitewide Geo-Tagged Posts:"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:236
+msgid "<h4>BuddyPress Geo Settings</h4>"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:240
+msgid "<h4>Edit My Location</h4>"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:291
+msgid "Show my closest address (in profile headers)...?"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:293
+#: gpress-core/gpress-bp.php:299
+#: gpress-core/gpress-bp.php:305
+msgid "ENABLED"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:295
+#: gpress-core/gpress-bp.php:301
+#: gpress-core/gpress-bp.php:307
+msgid "DISABLED"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:297
+msgid "Show my location on maps (throughout the site)...?"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:303
+msgid "Show my geo-tagged posts (in activity)...?"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:379
+#, php-format
+msgid "%s is presently located near %s"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:390
+msgid "Geo-Settings"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:393
+msgid "Edit My Location"
+msgstr ""
+
+#: gpress-core/gpress-bp.php:405
+msgid "Your Location:"
+msgstr ""
+
+#: gpress-core/gpress-content-filter.php:7
+#: gpress-core/gpress-deprecated.php:8
+#: gpress-core/gpress-excerpt-filter.php:7
+#: gpress-core/gpress-functions.php:121
+#: gpress-core/gpress-init.php:65
+#: gpress-core/gpress-maps.php:6
+#: gpress-core/gpress-meta-boxes.php:5
+#: gpress-core/gpress-meta-boxes.php:41
+#: gpress-core/gpress-post-types.php:8
+#: gpress-core/gpress-post-types.php:77
+#: gpress-core/gpress-rss.php:29
+#: gpress-core/gpress-rss.php:35
+#: gpress-core/gpress-rss.php:57
+#: gpress-core/gpress-shortcodes.php:5
+#: gpress-core/gpress-taxonomy.php:8
+msgid "place"
+msgstr ""
+
+#: gpress-core/gpress-content-filter.php:96
+#: gpress-core/gpress-content-filter.php:101
+msgid "Continue Reading"
+msgstr ""
+
+#: gpress-core/gpress-content-filter.php:98
+msgid "There is no excerpt because this is a protected post."
+msgstr ""
+
+#: gpress-core/gpress-functions.php:158
+msgid "In order to add new places, you must first log-in."
+msgstr ""
+
+#: gpress-core/gpress-functions.php:183
+#: gpress-core/gpress-maps.php:7
+#: gpress-core/gpress-taxonomy.php:7
+msgid "places"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:184
+#: gpress-core/gpress-maps.php:8
+#: gpress-core/gpress-taxonomy.php:33
+msgid "placed"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:227
+msgid "Error - Place Not Published"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:234
+msgid "Place Published - Click to View Place"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:302
+msgid "Name of Place"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:304
+msgid "Description of Place"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:308
+msgid "Location of Place"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:310
+#: gpress-core/gpress-taxonomy.php:6
+msgid "Type of Place"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:317
+#: gpress-core/gpress-taxonomy.php:31
+msgid "Place Tags"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:322
+msgid "Title"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:324
+msgid "Description"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:326
+msgid "Category"
+msgstr ""
+
+#: gpress-core/gpress-functions.php:335
+msgid "Tags"
+msgstr ""
+
+#: gpress-core/gpress-geoform.php:390
+msgid "Search"
+msgstr ""
+
+#: gpress-core/gpress-geoform.php:414
+msgid "Closest address:"
+msgstr ""
+
+#: gpress-core/gpress-geoform.php:425
+msgid "Marker status:"
+msgstr ""
+
+#: gpress-core/gpress-geoform.php:426
+msgid "Click and drag the marker."
+msgstr ""
+
+#: gpress-core/gpress-maps.php:9
+msgid "Type(s) of Place: "
+msgstr ""
+
+#: gpress-core/gpress-maps.php:10
+msgid "Tag(s): "
+msgstr ""
+
+#: gpress-core/gpress-maps.php:508
+msgid "was not given an address"
+msgstr ""
+
+#: gpress-core/gpress-maps.php:511
+#, php-format
+msgid "%s was last spotted near %s"
+msgstr ""
+
+#: gpress-core/gpress-maps.php:514
+#: gpress-core/gpress-maps.php:517
+#, php-format
+msgid "%s was geo-tagged at %s"
+msgstr ""
+
+#: gpress-core/gpress-maps.php:519
+#: gpress-core/gpress-rss.php:43
+#, php-format
+msgid "%s is located near %s"
+msgstr ""
+
+#: gpress-core/gpress-maps.php:529
+msgid "This place does not have any content yet..."
+msgstr ""
+
+#: gpress-core/gpress-maps.php:619
+msgid "No description was provided..."
+msgstr ""
+
+#: gpress-core/gpress-meta-boxes.php:11
+msgid "Location of Place:"
+msgstr ""
+
+#: gpress-core/gpress-meta-boxes.php:26
+msgid "Location of Post:"
+msgstr ""
+
+#: gpress-core/gpress-meta-boxes.php:45
+#: gpress-core/gpress-meta-boxes.php:60
+msgid "Map Options"
+msgstr ""
+
+#: gpress-core/gpress-options.php:58
+#: gpress-core/gpress-options.php:97
+#: gpress-core/gpress-options.php:130
+#: gpress-core/gpress-options.php:165
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: gpress-core/gpress-options.php:134
+msgid "All of the options seen on this Advanced Settings page are only accesible and visible to Super Adminstrators"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:5
+msgid "Places"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:6
+msgid "Place"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:7
+#: gpress-core/gpress-post-types.php:23
+msgid "Add New Place"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:9
+msgid "Places are represented as a marker on a map..."
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:24
+msgid "Edit Place"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:25
+msgid "New Place"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:26
+msgid "View Place"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:27
+msgid "Search Places"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:28
+msgid "No places found"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:29
+msgid "No places found in Trash"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:81
+#, php-format
+msgid "Place updated. <a href=\"%s\">View place</a>"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:82
+msgid "Custom field updated."
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:83
+msgid "Custom field deleted."
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:84
+msgid "Place updated."
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:86
+#, php-format
+msgid "Place restored to revision from %s"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:87
+#, php-format
+msgid "Place published. <a href=\"%s\">View place</a>"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:88
+msgid "Place saved."
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:89
+#, php-format
+msgid "Place submitted. <a target=\"_blank\" href=\"%s\">Preview place</a>"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:90
+#, php-format
+msgid "Place scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview place</a>"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:92
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: gpress-core/gpress-post-types.php:93
+#, php-format
+msgid "Place draft updated. <a target=\"_blank\" href=\"%s\">Preview place</a>"
+msgstr ""
+
+#: gpress-core/gpress-rss.php:49
+msgid "Description:"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:5
+msgid "Types of Places"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:14
+msgid "Search Types of Places"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:15
+msgid "All Types of Places"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:16
+msgid "Parent Types of Places"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:17
+msgid "Parent Type of Place:"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:18
+msgid "Edit Type of Place"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:19
+msgid "Update Type of Place"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:20
+msgid "Add New Type of Place"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:21
+msgid "New Type of Place"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:32
+msgid "Place Tag"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:39
+msgid "Search Place Tags"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:40
+msgid "Popular Place Tags"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:41
+msgid "All Place Tags"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:44
+msgid "Edit Place Tag"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:45
+msgid "Update Place Tag"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:46
+msgid "Add New Place Tag"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:47
+msgid "New Place Tag Name"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:48
+msgid "Separate place tags with commas"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:49
+msgid "Add or remove place tags"
+msgstr ""
+
+#: gpress-core/gpress-taxonomy.php:50
+msgid "Choose from the most used place tags"
+msgstr ""
+
+#: gpress-core/meta/meta-sidebar-content.php:4
+msgid "Map Type:"
+msgstr ""
+
+#: gpress-core/meta/meta-sidebar-content.php:12
+msgid "Zoom Level:"
+msgstr ""
+
+#: gpress-core/meta/meta-sidebar-content.php:22
+#: gpress-core/widgets/widgets-all-places.php:108
+#: gpress-core/widgets/widgets-all-posts.php:87
+#: gpress-core/widgets/widgets-all-users.php:89
+#: gpress-core/widgets/widgets-fav-place.php:144
+msgid "Advanced Settings"
+msgstr ""
+
+#: gpress-core/meta/meta-sidebar-content.php:25
+#: gpress-core/widgets/widgets-all-places.php:111
+#: gpress-core/widgets/widgets-all-posts.php:90
+#: gpress-core/widgets/widgets-all-users.php:92
+#: gpress-core/widgets/widgets-fav-place.php:147
+msgid "Overwrite default height for this map:"
+msgstr ""
+
+#: gpress-core/meta/meta-sidebar-content.php:27
+msgid "Numbers only (defaults to 250)"
+msgstr ""
+
+#: gpress-core/tinymce/gpress.php:17
+msgid "gPress TinyMCE Editor"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-places.php:12
+msgid "Show and search all places"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-places.php:13
+#: gpress-core/widgets/widgets-all-places.php:30
+msgid "All Places"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-places.php:85
+#: gpress-core/widgets/widgets-all-posts.php:64
+#: gpress-core/widgets/widgets-all-users.php:66
+#: gpress-core/widgets/widgets-fav-place.php:116
+#: gpress-core/widgets/widgets-recent-places.php:62
+msgid "Widget Title:"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-places.php:113
+#: gpress-core/widgets/widgets-all-posts.php:92
+#: gpress-core/widgets/widgets-all-users.php:94
+#: gpress-core/widgets/widgets-fav-place.php:149
+msgid "Numbers only - Defaults to 350"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-posts.php:12
+msgid "Show all geo-tagged posts"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-posts.php:13
+#: gpress-core/widgets/widgets-all-posts.php:28
+msgid "All Geo-Tagged Posts"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-users.php:14
+msgid "Show all geo-tagged users"
+msgstr ""
+
+#: gpress-core/widgets/widgets-all-users.php:15
+#: gpress-core/widgets/widgets-all-users.php:30
+msgid "All Geo-Tagged Users"
+msgstr ""
+
+#: gpress-core/widgets/widgets-fav-place.php:12
+msgid "Pick your favorite place to show on map"
+msgstr ""
+
+#: gpress-core/widgets/widgets-fav-place.php:13
+#: gpress-core/widgets/widgets-fav-place.php:30
+msgid "Favorite Place"
+msgstr ""
+
+#: gpress-core/widgets/widgets-fav-place.php:50
+msgid "<p>You will first need to add a place ID within this widget's options in order for it to be displayed...</p>"
+msgstr ""
+
+#: gpress-core/widgets/widgets-fav-place.php:121
+msgid "Place ID:"
+msgstr ""
+
+#: gpress-core/widgets/widgets-recent-places.php:12
+msgid "The most recent places on your site"
+msgstr ""
+
+#: gpress-core/widgets/widgets-recent-places.php:13
+#: gpress-core/widgets/widgets-recent-places.php:32
+msgid "Recent Places"
+msgstr ""
+
+#: gpress-core/widgets/widgets-recent-places.php:67
+msgid "Number of Places:"
+msgstr ""
+
+#: gpress-examples/custom.php:33
+msgid "Primary Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:38
+msgid "2nd Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:43
+msgid "3rd Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:48
+msgid "4th Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:53
+msgid "5th Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:58
+msgid "6th Photo of Place:"
+msgstr ""
+
+#: gpress-examples/custom.php:182
+msgid "PHOTO"
+msgstr ""
+
+#: gpress-examples/custom.php:188
+msgid "INFO"
+msgstr ""
+
+#: gpress-examples/custom.php:198
+msgid "REVIEWS"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:3
+msgid "BuddyPress Components"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:5
+msgid "<p>These options allow you to control the components available for BuddyPress.</p>"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:8
+msgid "Show User Location Settings at Sign-Up:"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:20
+msgid "User Rights:"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:25
+msgid "<strong>INDIVIDUAL SETTINGS</strong><br />Each user can control their own settings..."
+msgstr ""
+
+#: gpress-options/buddypress-components.php:27
+msgid "<strong>SITEWIDE OVER-RIDE</strong><br />The default settings control all user settings..."
+msgstr ""
+
+#: gpress-options/buddypress-components.php:32
+msgid "Default User Locations on BuddyPress Profiles:"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:37
+msgid "ABOVE PROFILE FIELDS"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:39
+msgid "BELOW PROFILE FIELDS"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:41
+msgid "DO NOT DISPLAY"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:46
+msgid "Default Closest Address on User Profile:"
+msgstr ""
+
+#: gpress-options/buddypress-components.php:58
+msgid "Show Geo-Tagged Posts on User's Activity Page:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:3
+msgid "BuddyPress Maps"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:5
+msgid "<p>These options allow you to control BuddyPress maps.</p>"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:8
+msgid "Profile Map Height:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:15
+#: gpress-options/buddypress-maps.php:59
+#: gpress-options/map-settings.php:15
+msgid "This is a numbers only field and defaults to 450."
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:20
+msgid "Profile Map Type:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:25
+#: gpress-options/buddypress-maps.php:69
+#: gpress-options/map-settings.php:37
+msgid "ROADPMAP VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:27
+#: gpress-options/buddypress-maps.php:71
+#: gpress-options/map-settings.php:39
+msgid "SATELLITE VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:29
+#: gpress-options/buddypress-maps.php:73
+#: gpress-options/map-settings.php:41
+msgid "HYBRID VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:31
+#: gpress-options/buddypress-maps.php:75
+#: gpress-options/map-settings.php:43
+msgid "TERRAIN VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:36
+msgid "Profile Map Zoom:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:41
+#: gpress-options/buddypress-maps.php:85
+#: gpress-options/map-settings.php:53
+msgid "CLOSE-UP"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:43
+#: gpress-options/buddypress-maps.php:87
+#: gpress-options/map-settings.php:55
+msgid "NEARBY"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:45
+#: gpress-options/buddypress-maps.php:89
+#: gpress-options/map-settings.php:57
+msgid "CITY VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:47
+#: gpress-options/buddypress-maps.php:91
+#: gpress-options/map-settings.php:59
+msgid "COUNTRY VIEW"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:52
+msgid "Activity Map Height:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:64
+msgid "Activity Map Type:"
+msgstr ""
+
+#: gpress-options/buddypress-maps.php:80
+msgid "Activity Map Zoom:"
+msgstr ""
+
+#: gpress-options/credit-settings.php:3
+msgid "Credit Settings"
+msgstr ""
+
+#: gpress-options/credit-settings.php:5
+msgid "<p>These options allow you to remove all references and credits from gPress.</p><p>Although it is hugely appreciated if you provide some form of shout-back or recognition for gPress, we understand that some situations require re-branding, and do not want you to edit core files, so please use these options instead:</p>"
+msgstr ""
+
+#: gpress-options/credit-settings.php:8
+msgid "Show Credits"
+msgstr ""
+
+#: gpress-options/custom-pages.php:3
+msgid "Custom Page Settings"
+msgstr ""
+
+#: gpress-options/custom-pages.php:5
+msgid "<p>This allows you to add certain gPress features to specific pages without needing to manually create page templates.</p>"
+msgstr ""
+
+#: gpress-options/custom-pages.php:9
+msgid "Front-End Place Submission Page ID:"
+msgstr ""
+
+#: gpress-options/custom-pages.php:15
+msgid "This should be a number representing the ID of the page you would like to use for front-end place submission."
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:3
+msgid "Excerpt Settings"
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:5
+msgid "<p>These options allow you to control the way that the content and excerpts are handled on the homepage of your theme. Some themes strip-out HTML tags with the excerpts, or use full-content instead - so these options provide fine-grain control over these components.</p>"
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:8
+msgid "Remove Maps from Homepage Content Loop:"
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:13
+#: gpress-options/excerpt-settings.php:25
+#: gpress-options/misc-settings.php:15
+msgid "NO"
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:15
+#: gpress-options/excerpt-settings.php:27
+#: gpress-options/misc-settings.php:13
+msgid "YES"
+msgstr ""
+
+#: gpress-options/excerpt-settings.php:20
+msgid "Remove Maps from Excerpts:"
+msgstr ""
+
+#: gpress-options/geotagged-posts.php:3
+msgid "Geo-Tagged Posts"
+msgstr ""
+
+#: gpress-options/geotagged-posts.php:5
+msgid "<p>These options allow you to fine-tune the geo-tagged post functionality.</p>"
+msgstr ""
+
+#: gpress-options/geotagged-posts.php:8
+msgid "Force Geo-Tagged Posting Capability:"
+msgstr ""
+
+#: gpress-options/gpress-credits.php:3
+msgid "gPress Credits"
+msgstr ""
+
+#: gpress-options/language-and-lingo.php:3
+msgid "Language &amp; Lingo"
+msgstr ""
+
+#: gpress-options/language-and-lingo.php:5
+msgid "<p>If you have defined WPLANG and the \"gpress-lang\" folder contains the relevant .mo file, gPress will automatically switch languages. However, if you want to switch to a custom .mo file, you should add the file to \"wp-content/gpress\" as this will keep it safe and prevent it from being over-written with automatic upgrades, but please note that after switching language and clicking \"SAVE CHANGES\", you will need to refresh the page once again to ensure everything gets flushed and refreshed properly.</p>"
+msgstr ""
+
+#: gpress-options/language-and-lingo.php:8
+msgid "Name of Custom MO File:"
+msgstr ""
+
+#: gpress-options/language-and-lingo.php:14
+msgid "Relative to \"/wp-content/gpress/\""
+msgstr ""
+
+#: gpress-options/loop-settings.php:3
+msgid "Loop Settings"
+msgstr ""
+
+#: gpress-options/loop-settings.php:5
+msgid "<p>These allow you to add or remove the places shown on the homepage by controlling the post types querried. If loops start acting strange, please switch to \"POSTS ONLY\", which removes the the filters.</p><p>Please note that some plugins are unable to handle post_type arrays, and only work when querrying one type, such as either posts or places.</p>"
+msgstr ""
+
+#: gpress-options/loop-settings.php:8
+msgid "Homepage Loop:"
+msgstr ""
+
+#: gpress-options/loop-settings.php:13
+msgid "BOTH POSTS AND PLACES"
+msgstr ""
+
+#: gpress-options/loop-settings.php:15
+msgid "POSTS ONLY"
+msgstr ""
+
+#: gpress-options/loop-settings.php:17
+msgid "PLACES ONLY"
+msgstr ""
+
+#: gpress-options/map-settings.php:3
+msgid "Map Settings"
+msgstr ""
+
+#: gpress-options/map-settings.php:5
+msgid "<p>These options allow you to control the default settings for maps.</p>"
+msgstr ""
+
+#: gpress-options/map-settings.php:8
+msgid "Default Map Height:"
+msgstr ""
+
+#: gpress-options/map-settings.php:20
+msgid "Default Map Location:"
+msgstr ""
+
+#: gpress-options/map-settings.php:27
+msgid "This address is used as the default location for new maps when the geo-coding services are unable to obtain an address for the user.<br/><br/>It can be a country, city, street address or even direct coordinates..."
+msgstr ""
+
+#: gpress-options/map-settings.php:32
+msgid "Default Map Type:"
+msgstr ""
+
+#: gpress-options/map-settings.php:48
+msgid "Default Map Zoom:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:3
+msgid "Marker Settings"
+msgstr ""
+
+#: gpress-options/marker-settings.php:5
+msgid "<p>These options allow you to upload or link to custom images for markers.</p><p>The markers themselves should be 30px by 30px, whereas the shadows behind them should be 40px by 40px. Both should be transparent PNGs.</p>"
+msgstr ""
+
+#: gpress-options/marker-settings.php:8
+msgid "Marker Icon URL for Posts:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:14
+#: gpress-options/marker-settings.php:25
+#: gpress-options/marker-settings.php:36
+#: gpress-options/marker-settings.php:47
+#: gpress-options/marker-settings.php:58
+#: gpress-options/marker-settings.php:69
+#: gpress-options/marker-settings.php:80
+#: gpress-options/marker-settings.php:91
+msgid "This should start with http://"
+msgstr ""
+
+#: gpress-options/marker-settings.php:19
+msgid "Shadow Icon URL for Posts:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:30
+msgid "Marker Icon URL for Places:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:41
+msgid "Shadow Icon URL for Places:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:52
+msgid "Marker Icon URL for Favorite Place Widget:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:63
+msgid "Shadow Icon URL for Favorite Place Widget:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:74
+msgid "Marker Icon URL for Users:"
+msgstr ""
+
+#: gpress-options/marker-settings.php:85
+msgid "Shadow Icon URL for Users:"
+msgstr ""
+
+#: gpress-options/misc-settings.php:3
+msgid "Miscellaneous Settings"
+msgstr ""
+
+#: gpress-options/misc-settings.php:5
+msgid "<p>Other MISC advanced settings can be found here, such as the removal of jQuery, which is needed for certain map functions but may already be included with your theme, in which case, you may need to remove it to avoid conflicts.</p>"
+msgstr ""
+
+#: gpress-options/misc-settings.php:8
+msgid "Add jQuery to Theme:"
+msgstr ""
+
+#: gpress-options/module-control.php:3
+msgid "Module Control"
+msgstr ""
+
+#: gpress-options/module-control.php:5
+msgid "<p>These options allow you to control the BASE gPress modules used by WordPress.</p>"
+msgstr ""
+
+#: gpress-options/module-control.php:8
+msgid "Geo-Tagged Posts:"
+msgstr ""
+
+#: gpress-options/module-control.php:20
+msgid "geoRSS:"
+msgstr ""
+
+#: gpress-options/module-control.php:32
+msgid "Places:"
+msgstr ""
+
+#: gpress-options/submit.php:2
+msgid "Save Changes"
+msgstr ""
+

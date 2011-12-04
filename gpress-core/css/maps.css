@@ -1,0 +1,172 @@
+/* FRONT-END - PLACES */
+#main-content .gpress_mapcanvas img,  
+.gpress_mapcanvas img {
+	background:transparent;
+	background-color:transparent;
+	border:none;
+	max-width:auto;
+	max-height:auto;
+	width:auto;
+	height:auto;
+}
+.gpress-window-close {
+    background: url('../images/markers/close.png') !important;
+    height: 16px !important;
+    margin: 7px !important;
+    width: 16px !important;
+}
+.infobox_title {
+	color:#FFF;
+	font-weight:bold;
+	width:auto;
+	text-align:left;
+	padding:1px 90px 1px 40px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:1.3em;
+	line-height:30px;
+}
+.infobox_title a {
+	color:#FFF;
+	text-decoration:none;
+}
+.infobox_title a:hover {
+	color:#CCC;
+	text-decoration:underline;
+}
+.infobox_description {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:20px;
+	color:#666;
+	margin-bottom:0 !important;
+	width:100% !important;
+	margin-top:-2px !important;
+}
+.gpress_infobox {
+	cursor:auto;
+	display:block;
+	height:auto;
+	padding-bottom:10px;
+}
+.gpress_mapcanvas { 
+	display:block;
+	height: 450px; 
+	background:#FFF; 
+	border:1px solid #DDD; 
+}
+.gpress_infobox table,
+.gpress_infobox table tr,
+.gpress_infobox table td {
+	padding:0 !important;
+	vertical-align:top !important;
+	border:none !important;
+	margin:0 !important;
+}
+.gpress_infobox_img {
+	display:block !important;
+	padding:2px !important;
+	background:#EEE !important;
+	border:1px solid #DDD !important;
+	margin:0 0 0 -3px !important;
+}
+.infobox_table_spacer {
+	clear:both;
+	float:left;
+	position:relative;
+	width:15px;
+}
+p.place_meta {
+	display:block;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:18px;
+	color:#666;
+	width:100%;
+	font-weight:normal;
+	margin-bottom:0 !important;
+	margin-top:5px;
+}
+p.place_meta a {
+	color:#C22B99;
+	text-decoration:none;
+}
+p.place_meta a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+.gpress_infobox table.table_places_meta {
+	margin-top:10px !important;
+	padding-top:10px !important;
+	border-top:1px dotted #DDD !important;
+}
+.gpress_mapcanvas img.attachment-post-thumbnail {
+	width:100%;
+}
+span.gpress_shortcode_display {
+	clear:both;
+	display:block;
+	background:#F7F7F7;
+	color:#222222;
+	line-height:18px;
+	margin-bottom:18px;
+	padding:1.5em;
+	font-family:"Courier New", Courier, monospace;
+}
+.bp_profile_header_address {
+	color:#666;
+	font-size:11px;
+	padding:5px 0;
+}
+
+/* ALL PLACES WIDGET */
+#big-search-wrapper {
+	display:block;
+	width:100%;
+}
+#big-search-text-wrapper {
+	float:left;
+	position:relative;
+	width:63%;
+	padding:0 3% 0 1%;
+	background:#FFF;
+	border:1px solid #CCC;
+}
+#big-search-text-wrapper input {
+	width:100%;
+	padding:10px 5px;
+	font-size:1em;
+	border:none;
+	background:transparent;
+}
+#big-search-button {
+	float:right;
+	font-size:1em;
+	padding:10px;
+	width:30%;
+	text-align:center;
+	background:#DDD;
+	color:#666;
+	border:1px solid #CCC;
+	cursor:pointer;
+}
+#big-search-button:hover {
+	border-color:#AAA;
+	background:#CCC;
+}
+.gpress-all-places-widget-wrapper {
+	display:block;
+	background:#FFF;
+	width:100%;
+	margin:15px 0 20px;
+}
+	
+
+/* ADD-ON FOR BETTER TWENTY TEN INTEGRATED GALLERY */
+.gpress_mapcanvas .gallery {
+    margin:-40px auto 20px !important;
+}
+.gpress_mapcanvas dl.gallery-item {
+    width:50% !important;
+    float:left;
+}

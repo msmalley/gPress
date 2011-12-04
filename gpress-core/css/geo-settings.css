@@ -1,0 +1,54 @@
+form#geo-form {
+    padding:5px 0 25px;
+}
+form#geo-form label {
+	display:block;
+	border-top:1px dotted #CCC;
+	padding-top:10px;
+	font-weight:bold;
+}
+form#geo-form textarea.gpress_address {
+	display:block;
+	background:transparent;
+	border:none;
+	-moz-box-shadow:none;
+	width:100%;
+	padding:0;
+	max-height:50px;
+	overflow:hidden;
+}
+.gpress_input_wrapper {
+    width: 98%;
+    padding:3px 1%;
+    border:1px solid #CCC;
+    background: #FAFAFA;
+}
+.gpress_otherstuff table tr td,
+.gpress_otherstuff table tr th {
+    padding: 0;
+}
+.gpress_otherstuff input[type="button"] {
+    margin-left: 20px;
+}
+.gpress_input_wrapper input {
+    border:none;
+    width:100%;
+    height:auto;
+    background:transparent;
+}
+form#geo-form label.gp-clear {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding:15px 0 5px;
+    border:none;
+}
+form#geo-form input[type="radio"],
+form#geo-form label.label-radio {
+    float: left;
+}
+form#geo-form label.borderless {
+    float: left;
+    margin:-10px 25px 5px 5px;
+    border:none;
+}

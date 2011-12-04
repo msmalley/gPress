@@ -1,0 +1,155 @@
+<p>We are desperate for help when it comes to documentation and (or) tutorials with gPress, all of which are things we will get around to doing at some point, but for now, it eats away at the available time we have to produce improve the features and functions as prescribed by our <a href="http://gpress.my/roadmap/">roadmap</a>. We have removed the documentation for gPress 0.2.4.4.2 as all screen-shots and walkthroughs are now obsolete with gPress 0.2.5.</p>
+
+<h3>.....</h3>
+<h3>gPress and Themes</h3>
+<p>gPress is one of those plugins that heavily relies upon standardized front-end theme development based upon the structure and guidelines of WordPress, which is why gPress works flawlessly with Twenty Ten and BP-Default, and will at all times be tried and tested on the default themes of WordPress and BuddyPress. In order to allow for places to be shown on the homepage, with or without the standard blog posts, that homepage must make use of the_content() or the_excerpt() functions, which some themes do not do. It also relies upon The Loop being constructed in similarly standard ways, as these are all things that gPress must hook into and manipulate in order to produce the end-result. However, as gPress itself is built in a recommended way, it is easy for developers or even those with a little curiosity and patience for development can also get to grips with.</p>
+
+<p>Places, which are one the fundamental building blocks for gPress are built upon custom post types, which can be easily accessed and manipulated using query_posts, such as these <a href="http://codex.wordpress.org/Function_Reference/query_posts">documented</a> methods demonstrate:</p>
+
+<pre>
+&lt;?php
+
+//The Query
+query_posts( 'post_type=place' );
+
+//The Loop
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+..
+endwhile; else:
+..
+endif;
+
+//Reset Query
+wp_reset_query();
+
+?&gt;
+</pre>
+
+<p>If your theme is producing strange distorted results, there are options that allow you to switch off the gPress filtering on certain pages, and as more documented needs arise, more actions along these lines will be provided.</p>
+
+<h3>.....</h3>
+<h3>gPress Hooks and Filters</h3>
+<p>To make matters even more confusing, gPress also introduces a number of its own hooks and filters, one of which, gpress_content - allows for the manipulation of the content contained within the map marker windows, which allows for an unlimited number of possibilities.</p>
+
+<p>With that in mind, we will now list all available hooks and filters found throughout gPress (and will eventually get around to providing more detailed documentation to each one):</p>
+
+<strong>Developer Filters:</strong>
+<ul>
+<li><strong>gpress_infowindow_excerpt</strong> - $content,$post_id</li>
+<li><strong>gpress_infowindow_content</strong> - $content,$post_id</li>
+<li><strong>gpress_content</strong> - $content,$post_id</li>
+<li><strong>gpress_post_from_front_end</strong> - $data,$files</li>
+<li><strong>gmaps_limit_wysiwyg</strong> - true</li>
+</ul>
+
+<strong>Developer Hooks:</strong>
+<ul>
+<li><strong>These are used to manipulate the front-end place submission form:</strong></li>
+<li><strong>after_front_end_post_submission</strong> - $post_id,$files</li>
+<li><strong>before_front_end_post_form</strong></li>
+<li><strong>before_front_end_post_map</strong></li>
+<li><strong>before_front_end_post_cat</strong></li>
+<li><strong>after_front_end_post_tags</strong></li>
+<li><strong>after_front_end_post_form</strong></li>
+</ul>
+
+<h3>.....</h3>
+<h3>Important Functions</h3>
+<p>In addition, the following functions may also be of specific interest to developers as they are what allow for the magic to take place...</p>
+
+<pre>
+&lt;?php
+$gpress_map_settings = array(
+    'map_id' => false,
+    'map_height' => false,
+    'map_type' => false,
+    'map_zoom' => false,
+    'map_position' => false,
+    'post_type' => false,
+    'post_id' => false,
+    'place_id' => false,
+    'widget_id' => false,
+    'marker_icon' => false,
+    'marker_shadow' => false,
+    'marker_title' => false,
+    'description' => false,
+    'marker_url' => false,
+    'bp_user_array' => false
+)
+gpress_add_map($gpress_map_settings);
+?&gt;
+</pre>
+
+<p><strong>gpress_add_map()</strong> - This is the core function that generates maps, and can be used to add new front-end maps as required.</p>
+
+<p>Another important function is <strong>gpress_geoform</strong>, which allows you to add maps to forms with drag and drop functionality for picking locations:</p>
+
+<pre>
+&lt;?php
+gpress_geoform(
+    $map_id,
+    $map_type,
+    $map_zoom,
+    $map_position,
+    $is_empty,
+    $hide_inputs = false,
+    $is_geo_settings = false
+);
+?&gt;
+</pre>
+
+<h3>.....</h3>
+<h3>gPress and OTHER Plugins</h3>
+<p>Like most things of this complex nature, they can also be sensitive, and this is especially so with gPress and any other plugin that not only relies or uses Google's map API, but also with other plugins that alter or manipulate custom post types, taxonomies, and the query_post / content / excerpt filters... Yes, we know, that's pretty much all plugins, but running anything over 5 to 10 plugins is never really advised anyway, so this is nothing new or necessarily specific to this plugin, but is something we would like to bring-up. When we refer to gPress running flawlessly on Twenty Ten and BP-Default, it also means that we do not have any other plugins activated, so if you're install starts acting strange, please do you research before supporting a support ticket.</p>
+
+<p>Let us know if the problem occurs using either of the default themes, if its does not, it means that it is probably a conflict with the theme you are using, but if the problem still happens, it usually means that it is a conflict with one of the other plugins, so deactivate them all and re-activate each plugin one at a time until you find the plugin that is causing the error. If people submit bugs that include this information, they are much more likely to get fixed quicker, so please, do what you can to help...</p>
+
+<h3>.....</h3>
+<h3>Translation / Language Options and Taxonomies</h3>
+<p>Strange to have the topic of taxonomies included in the translation / language section? Not really, not when you consider that all the taxonomies used throughout gPress can be changed simply by editing a language file. In fact, if you have WordPress configured to run in another language, and gPress already has the other language file, it will automatically use it for you, and can even be over-written with custom .mo files that allow those using English to transform "places" into "venues" - for example!</p>
+
+<p>This means that anyone using or generating gPress language files must ensure that the following key-words remain as words without spaces that are written with standard characters suitable to be WordPress taxonomies - such as</p>
+
+<ul>
+<li><strong>place</strong> - default post type for places</li>
+<li><strong>places</strong> - default category type for places</li>
+<li><strong>placed</strong> - default tag type for places</li>
+</ul>
+
+<p>At the moment, gPress has been fully translated into the following languages:</p>
+<ul>
+<li><strong>Spanish / Español</strong> - Translated by <a href="http://www.seluvega.es/">Selu</a></li>
+</ul>
+
+<h3>.....</h3>
+<h3>What about Shortcodes and the WYSIWYG editor, or easily adding ad-hoc maps...?</h3>
+<p>This are all inter-linked topics, as we first create the function, wrap it as a shortcode, integrate it into widgets and WYSIWYG editor functionality. As of initially writing this, the only WYSIWYG editor function available is to easily add ad-hoc maps on the fly and with considerable ease. It does this using the functionality of the shortcodes (<a href="http://gpress.my/shortcodes/">interactive examples of shortcodes</a>) - which are more feature rich and allow developers to do amazing things, such as really easily generating widgets, as we have done in core.</p>
+
+<strong>Available Shortcodes:</strong>
+<ul>
+<li>Ad-Hoc Place Generation</li>
+<li>All Places Map</li>
+<li>All Geo-Tagged Sitewide Posts Map</li>
+<li>All Geo-Tagged Users Map - only available to BuddyPress installs</li>
+</ul>
+
+<strong>Available Widgets</strong>
+<ul>
+<li>Recently Added Places (list)</li>
+<li>Favorite Place (map)</li>
+<li>All Places (map with search)</li>
+<li>All Geo-Tagged Sitewide Posts (map)</li>
+<li>All Geo-Tagged Users (map for BuddyPress only)</li>
+</ul>
+
+<h3>.....</h3>
+<h3>Where's The "Real" Documentation and all the pretty pictures...?</h3>
+<p>This is our present style, and its a comfortable way for us to explain things. We would very much like to have more technical documentation, less drama, and many more tutorials in every language under the sun, but we simply do not have the time for that and the code-base development itself, so please, if you have some time, and use gPress, please feel free to contribute to the project in anyway you can - this includes documentation and tutorials in any language you can explain them to us in...</p>
+
+<p>So... If you're looking for the "real" documentation, we look to you to help us make it a reality... :-)</p>
+
+<h3>.....</h3>
+<h3>More to Come</h3>
+<p>This documentation is more than just a work in progress, but will hopefully be expanded upon as time goes by. It would also be great to have as much of this documentation (and the shortcodes examples) into as many languages as possible, so if you're reading this and are capable of translating it or anything else from the project, please get in touch!</p>
+
+<p>If you are looking to learn what we have planned, please check-out our <a href="http://gpress.my/roadmap/">ROADMAP</a> and keep in-touch with us via the <a href="http://buddypress.org/community/groups/gpress/forum/">BuddyPress Forums</a>.</p>

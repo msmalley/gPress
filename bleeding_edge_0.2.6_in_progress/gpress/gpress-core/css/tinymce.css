@@ -1,0 +1,30 @@
+form#gpress_tinymce label {
+	clear:both;
+	display:block;
+	width:100%;
+	font-weight:bold;
+	padding:10px 0 5px;
+}
+form#gpress_tinymce input.gpress {
+	clear:both;
+	display:block;
+	width:390px;
+	padding:5px;
+}
+form#gpress_tinymce .mceActionPanel {
+	clear:both;
+	display:block;
+	width:100%;
+	padding:5px 0 0;
+}
+form#gpress_tinymce .search_input {
+	float:left;
+	width:290px;
+	padding:5px;
+}
+form#gpress_tinymce .search_button {
+	float:left;
+	width:80px;
+	padding:5px;
+	margin:0 0 0 10px;
+}
